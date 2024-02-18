@@ -142,6 +142,25 @@ section#form-page button#btn-send {
 section#form-page button#btn-send:hover {
   background-color: #ccc;
 }
+ul#container-list {
+  background-color: #636363;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  letter-spacing: 10px;
+  width: 800px;
+}
+ul#container-list li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+ul#container-list li > img {
+  width: 80px;
+  height: 80px;
+}
 @media screen and (max-width: 768px) {
   .nav-links {
     display: none;
@@ -201,5 +220,12 @@ section#form-page button#btn-send:hover {
 
   .burger.active .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+  }
+  #info-text {
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+  #info-text img {
+    display: none;
   }
 }
